@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Safety - Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>⚠️ SAFETY FIRST</h1>
+            <p>A complete guide to Work Safety Tips and Safety Signs</p>
+            <nav>
+                <a href="index.html">10 Safety Tips</a>
+                <a href="signs.html">Safety Signs</a>
+                <a href="quiz.html" class="active-nav">Interactive Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card-section">
+            <h2>Test Your Knowledge (Mini Quiz)</h2>
+            <p class="intro-text">Check how well you remember the rules and signs from the lesson!</p>
+            
+            <div id="quiz-container">
+                <div class="quiz-question">
+                    <p><strong>1. What shape and colour do Mandatory signs have?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> Triangular shape and yellow background</label><br>
+                    <label><input type="radio" name="q1" value="b"> Round shape and blue background</label><br>
+                    <label><input type="radio" name="q1" value="c"> Square shape and green background</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>2. Instead of lifting a heavy object manually, what should you use?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> A conveyor belt or a forklift</label><br>
+                    <label><input type="radio" name="q2" value="b"> Earplugs and safety goggles</label><br>
+                    <label><input type="radio" name="q2" value="c"> An assembly point</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>3. Which organisation can offer information and advice on workplace safety rights?</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Information signs</label><br>
+                    <label><input type="radio" name="q3" value="b"> Unions</label><br>
+                    <label><input type="radio" name="q3" value="c"> Warning signs</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>4. Fire safety signs normally have a red background...</strong></p>
+                    <label><input type="radio" name="q4" value="a"> to show what is forbidden to use.</label><br>
+                    <label><input type="radio" name="q4" value="b"> to catch immediate attention even at a distance.</label><br>
+                    <label><input type="radio" name="q4" value="c"> to show the way out of a danger.</label>
+                </div>
+
+                <button type="button" onclick="checkQuiz()" class="btn-primary">Check Answers</button>
+                <div id="quiz-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Educational Project on Workplace Safety & Signs • English B1 / PET Study Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

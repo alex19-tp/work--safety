@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Safety - Safety Signs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>⚠️ SAFETY FIRST</h1>
+            <p>A complete guide to Work Safety Tips and Safety Signs</p>
+            <nav>
+                <a href="index.html">10 Safety Tips</a>
+                <a href="signs.html" class="active-nav">Safety Signs</a>
+                <a href="quiz.html">Interactive Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card-section">
+            <h2>Types of Safety Signs</h2>
+            <p class="intro-text">
+                Safety signs are everywhere: on the road, at the workplace, on buses and other means of transport. Click the buttons below to filter by category!
+            </p>
+
+            <div class="filter-buttons">
+                <button type="button" class="filter-btn active" onclick="filterSigns('all', this)">All Signs</button>
+                <button type="button" class="filter-btn" onclick="filterSigns('warning', this)">Warning</button>
+                <button type="button" class="filter-btn" onclick="filterSigns('prohibition', this)">Prohibition</button>
+                <button type="button" class="filter-btn" onclick="filterSigns('mandatory', this)">Mandatory</button>
+                <button type="button" class="filter-btn" onclick="filterSigns('emergency', this)">Emergency & Fire</button>
+                <button type="button" class="filter-btn" onclick="filterSigns('information', this)">Information</button>
+            </div>
+
+            <div class="signs-grid">
+                
+                <!-- 1. WARNING SIGNS -->
+                <div class="sign-box warning" data-category="warning">
+                    <h3>Warning Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- Radioactivity -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 90">
+                                <polygon points="50,5 95,85 5,85" fill="#facc15" stroke="#1e293b" stroke-width="5" stroke-linejoin="round"/>
+                                <circle cx="50" cy="56" r="6" fill="#1e293b"/>
+                                <path d="M50,56 L36,36 A24,24 0 0,1 64,36 Z" fill="#1e293b"/>
+                                <path d="M50,56 L72,62 A24,24 0 0,1 58,78 Z" fill="#1e293b"/>
+                                <path d="M50,56 L42,78 A24,24 0 0,1 28,62 Z" fill="#1e293b"/>
+                            </svg>
+                            <span>Radioactivity</span>
+                        </div>
+                        <!-- Electrocution -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 90">
+                                <polygon points="50,5 95,85 5,85" fill="#facc15" stroke="#1e293b" stroke-width="5" stroke-linejoin="round"/>
+                                <polygon points="54,26 38,54 50,54 44,78 64,48 52,48" fill="#1e293b"/>
+                            </svg>
+                            <span>Electrocution</span>
+                        </div>
+                        <!-- Slipping -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 90">
+                                <polygon points="50,5 95,85 5,85" fill="#facc15" stroke="#1e293b" stroke-width="5" stroke-linejoin="round"/>
+                                <circle cx="48" cy="32" r="5" fill="#1e293b"/>
+                                <path d="M46,38 L38,54 L28,58 M44,44 L58,52 L64,44 M38,54 L46,68 L40,76" stroke="#1e293b" stroke-width="4" stroke-linecap="round" fill="none"/>
+                                <line x1="25" y1="78" x2="75" y2="78" stroke="#1e293b" stroke-width="3"/>
+                            </svg>
+                            <span>Slipping</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> Triangular shape and a yellow background.</p>
+                    <p><strong>Meaning:</strong> They warn us about possible dangers and threats (e.g., <em>Radioactivity, Electrocution, Slipping, Fire and Explosion, Biohazards</em>).</p>
+                </div>
+
+                <!-- 2. PROHIBITION SIGNS -->
+                <div class="sign-box prohibition" data-category="prohibition">
+                    <h3>Prohibition Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- No Smoking -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="42" fill="white" stroke="#dc2626" stroke-width="9"/>
+                                <rect x="24" y="46" width="44" height="8" fill="#1e293b"/>
+                                <rect x="70" y="46" width="6" height="8" fill="#64748b"/>
+                                <path d="M72,42 Q76,34 70,28" stroke="#64748b" stroke-width="2" fill="none"/>
+                                <line x1="20" y1="20" x2="80" y2="80" stroke="#dc2626" stroke-width="9"/>
+                            </svg>
+                            <span>No Smoking</span>
+                        </div>
+                        <!-- No Admission -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="42" fill="white" stroke="#dc2626" stroke-width="9"/>
+                                <rect x="38" y="44" width="24" height="24" rx="4" fill="#1e293b"/>
+                                <line x1="41" y1="26" x2="41" y2="46" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="47" y1="23" x2="47" y2="46" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="53" y1="24" x2="53" y2="46" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="59" y1="29" x2="59" y2="46" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+                                <line x1="20" y1="20" x2="80" y2="80" stroke="#dc2626" stroke-width="9"/>
+                            </svg>
+                            <span>No Admission</span>
+                        </div>
+                        <!-- No Mobile Phones -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="42" fill="white" stroke="#dc2626" stroke-width="9"/>
+                                <rect x="38" y="26" width="24" height="48" rx="3" fill="#1e293b"/>
+                                <rect x="42" y="32" width="16" height="30" fill="white"/>
+                                <line x1="20" y1="20" x2="80" y2="80" stroke="#dc2626" stroke-width="9"/>
+                            </svg>
+                            <span>No Phones</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> Round shape with a red frame on a white background.</p>
+                    <p><strong>Meaning:</strong> They tell us what we must not do or what is forbidden (e.g., <em>No smoking, No dogs allowed, No admission, No mobile phones</em>).</p>
+                </div>
+
+                <!-- 3. MANDATORY SIGNS -->
+                <div class="sign-box mandatory" data-category="mandatory">
+                    <h3>Mandatory Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- Wear Goggles -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="44" fill="#2563eb"/>
+                                <circle cx="50" cy="50" r="24" fill="none" stroke="white" stroke-width="3"/>
+                                <rect x="30" y="42" width="17" height="12" rx="3" fill="white"/>
+                                <rect x="53" y="42" width="17" height="12" rx="3" fill="white"/>
+                                <line x1="47" y1="47" x2="53" y2="47" stroke="white" stroke-width="3"/>
+                            </svg>
+                            <span>Wear Goggles</span>
+                        </div>
+                        <!-- Wear Gloves -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="44" fill="#2563eb"/>
+                                <path d="M36,52 L36,30 M43,52 L43,26 M50,52 L50,27 M57,52 L57,32 M30,54 L36,48" stroke="white" stroke-width="4.5" stroke-linecap="round"/>
+                                <rect x="34" y="48" width="26" height="26" rx="4" fill="white"/>
+                            </svg>
+                            <span>Wear Gloves</span>
+                        </div>
+                        <!-- Turn Right -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="44" fill="#2563eb"/>
+                                <path d="M36,72 L36,44 Q36,34 46,34 L66,34" stroke="white" stroke-width="8" fill="none" stroke-linecap="round"/>
+                                <polygon points="62,22 78,34 62,46" fill="white"/>
+                            </svg>
+                            <span>Turn Right</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> Round shape and a blue background.</p>
+                    <p><strong>Meaning:</strong> They tell us what we must do or wear (compulsory PPE), such as <em>Wash hands, Wear safety boots, Wear gloves, Wear goggles, Turn right</em>.</p>
+                </div>
+
+                <!-- 4. EMERGENCY & RESCUE SIGNS -->
+                <div class="sign-box emergency" data-category="emergency">
+                    <h3>Emergency & Rescue Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- First Aid Kit -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <rect x="8" y="8" width="84" height="84" rx="6" fill="#16a34a"/>
+                                <rect x="42" y="22" width="16" height="56" fill="white"/>
+                                <rect x="22" y="42" width="56" height="16" fill="white"/>
+                            </svg>
+                            <span>First Aid Kit</span>
+                        </div>
+                        <!-- Emergency Exit -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 120 90">
+                                <rect x="5" y="5" width="110" height="80" rx="5" fill="#16a34a"/>
+                                <rect x="78" y="15" width="26" height="60" fill="white"/>
+                                <circle cx="38" cy="26" r="6" fill="white"/>
+                                <path d="M36,34 L28,50 L18,54 M34,40 L48,46 L56,40 M28,50 L36,66 L30,74" stroke="white" stroke-width="5" stroke-linecap="round" fill="none"/>
+                                <path d="M54,52 L70,52 M64,46 L72,52 L64,58" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+                            </svg>
+                            <span>Emergency Exit</span>
+                        </div>
+                        <!-- Assembly Point -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <rect x="8" y="8" width="84" height="84" rx="6" fill="#16a34a"/>
+                                <circle cx="42" cy="42" r="5" fill="white"/>
+                                <circle cx="58" cy="42" r="5" fill="white"/>
+                                <rect x="36" y="49" width="12" height="16" rx="2" fill="white"/>
+                                <rect x="52" y="49" width="12" height="16" rx="2" fill="white"/>
+                                <path d="M18,18 L30,30 M82,18 L70,30 M18,82 L30,70 M82,82 L70,70" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                            <span>Assembly Point</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> Square or rectangular shape and a green background.</p>
+                    <p><strong>Meaning:</strong> They tell us the way out of a danger or give first aid info (e.g., <em>Emergency exit, Assembly point, First aid kit, Life jacket</em>).</p>
+                </div>
+
+                <!-- 5. FIRE SAFETY SIGNS -->
+                <div class="sign-box emergency" data-category="emergency">
+                    <h3>Fire Safety Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- Fire Extinguisher -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 100 100">
+                                <rect x="8" y="8" width="84" height="84" rx="6" fill="#dc2626"/>
+                                <rect x="38" y="34" width="24" height="44" rx="6" fill="white"/>
+                                <rect x="46" y="24" width="8" height="10" fill="white"/>
+                                <path d="M46,26 L30,32 L26,46" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+                                <line x1="50" y1="24" x2="64" y2="20" stroke="white" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                            <span>Fire Extinguisher</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> Rectangular/square shape with a red background.</p>
+                    <p><strong>Meaning:</strong> Designed to catch immediate attention even at a distance (e.g., <em>Fire extinguisher</em>).</p>
+                </div>
+
+                <!-- 6. INFORMATION SIGNS -->
+                <div class="sign-box information" data-category="information">
+                    <h3>Information Signs</h3>
+                    <div class="signs-visual-row">
+                        <!-- Road Direction -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 120 90">
+                                <rect x="5" y="10" width="110" height="70" rx="6" fill="#15803d" stroke="white" stroke-width="3"/>
+                                <text x="15" y="32" fill="white" font-size="12" font-weight="bold">Brussel 205</text>
+                                <text x="15" y="48" fill="white" font-size="12" font-weight="bold">Paris 497</text>
+                                <text x="15" y="64" fill="white" font-size="12" font-weight="bold">London 525</text>
+                            </svg>
+                            <span>Road Directions</span>
+                        </div>
+                        <!-- Open Sign -->
+                        <div class="mini-sign">
+                            <svg viewBox="0 0 120 90">
+                                <polyline points="40,28 60,12 80,28" fill="none" stroke="#475569" stroke-width="2"/>
+                                <rect x="20" y="28" width="80" height="44" rx="4" fill="#fef3c7" stroke="#1e293b" stroke-width="3"/>
+                                <text x="60" y="56" fill="#1e293b" font-size="18" font-weight="bold" text-anchor="middle">OPEN</text>
+                            </svg>
+                            <span>Open / Closed</span>
+                        </div>
+                    </div>
+                    <p><strong>Shape & Colour:</strong> May vary in shape, colour, and information.</p>
+                    <p><strong>Meaning:</strong> Unlike safety signs, they give general important information we may need (e.g., <em>Road directions, Open/Closed, Out of order</em>).</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Educational Project on Workplace Safety & Signs • English B1 / PET Study Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
